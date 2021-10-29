@@ -11,5 +11,7 @@
     border-styLe: ridge;
     border-coLor:darkvioLet;
 }
-
+#stop{
+    display: none;
+}
 

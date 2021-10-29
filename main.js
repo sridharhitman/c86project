@@ -1,6 +1,6 @@
 var canvas = new fabric.Canvas("myCanvas");
 var x = document.getElementById("myAudio");
-
+var listener = 0;
 
 function new_image() {
   fabric.Image.fromURL("BirthdayImage.jpg", function (Img) {
@@ -14,13 +14,14 @@ function new_image() {
     canvas.add(block_image_object);
   });
 }
-
 function playSound() {
     x.play();
-
+    document.getElementById("stop").style.display = "inline-block";
 }
+
 
 function stopSound() {
     x.pause();
-
+    document.getElementById("stop").style.display = "none";
 }
+
